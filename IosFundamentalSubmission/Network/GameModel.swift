@@ -57,3 +57,54 @@ struct GameDetailResponse: Codable {
         case description
     }
 }
+
+class Game {
+    let id: Int
+    let name: String?
+    let released: String?
+    let backgroundImage: String?
+    let rating: Double?
+    let description: String?
+
+    init(
+        id: Int,
+        name: String?,
+        released: String?,
+        backgroundImage: String?,
+        rating: Double?,
+        description: String? = nil
+    ) {
+        self.id = id
+        self.name = name
+        self.released = released
+        self.backgroundImage = backgroundImage
+        self.rating = rating
+        self.description = description
+    }
+}
+
+
+class GameDetail {
+    let id: Int
+    let name: String?
+    let released: String?
+    let backgroundImage: String?
+    let rating: Double?
+    let description: String?
+
+    init(
+        id: Int,
+        name: String?,
+        released: String?,
+        backgroundImage: String?,
+        rating: Double?,
+        description: String? = nil
+    ) {
+        self.id = id
+        self.name = name
+        self.released = released
+        self.backgroundImage = backgroundImage
+        self.rating = rating
+        self.description = description
+    }
+}
